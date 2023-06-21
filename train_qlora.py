@@ -40,7 +40,7 @@ _compute_dtype_map = {
 def parse_args():
     parser = argparse.ArgumentParser(description='ChatGLM-6B QLoRA')
     parser.add_argument('--train_args_json', type=str, required=True, help='TrainingArguments的json文件')
-    parser.add_argument('--model_name_or_path', type=str, default='THUDM/chatglm-6b', help='模型id或local path')
+    parser.add_argument('--model_name_or_path', type=str, default='/data//chatglm-6b', help='模型id或local path')
     parser.add_argument('--train_data_path', type=str, required=True, help='训练数据路径')
     parser.add_argument('--eval_data_path', type=str, default=None, help='验证数据路径')
     parser.add_argument('--seed', type=int, default=42)
